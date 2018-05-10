@@ -3,3 +3,12 @@
     <%= text_field_tag(:id) %>
     <%= submit_tag("Search") %>
 <% end %>
+<p>
+<%= @message %>
+<h1>Photos - </h1><br/>
+<% if @photos %>
+    <% @photos.each do |p| %>
+        <%= image_tag FlickRaw.url_n(flickr.photos.getInfo(:photo_id => p.id)) %>
+    <% end %>
+<% end %>
+</p>
