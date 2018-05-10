@@ -1,4 +1,4 @@
-# Odin-kittens
+# Odin-flickr
 
 This is a project from [The Odin Project](https://www.theodinproject.com).
 
